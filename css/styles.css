@@ -493,6 +493,62 @@ img {
     margin-left: 70px;
 }
 
+.sign-up {
+    margin-left: 93px;
+}
+
+.sign-up-form {
+    position: relative;
+}
+
+.sign-up-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.btn-sign-up {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--color-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px 62px 10px 28px;
+}
+
+.send-icon {
+    fill: #F5F4FA;
+}
+
 /*studio page - done*/
 /*section buttons*/
 .buttons {
@@ -600,7 +656,6 @@ img {
 .backdrop {
     transition: opacity, visibility;
     transition-duration: 250ms;
-    transition-delay: 0s 0s;
     transition-property: opacity, visibility;
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -624,6 +679,7 @@ img {
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 0 40px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -634,6 +690,7 @@ img {
     top: 8px;
     right: 8px;
     align-items: center;
+    justify-content: center;
     padding: 0;
     width: 30px;
     height: 30px;
@@ -643,9 +700,132 @@ img {
     cursor: pointer;
 }
 
-.x-icon {
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    z-index: 1;
+.form-title {
+    margin-top: 40px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-primary);
 }
+
+.form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: var(--txtcolor-secondary);
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 38px;
+    padding-right: 15px;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: var(--color-brand);
+}
+
+.form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+}
+
+.form-control:focus-within .form-icon {
+    fill: var(--color-brand);
+}
+
+.form-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--txtcolor-secondary);
+}
+
+.terms-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-brand);
+}
+
+.terms-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-send {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--color-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px 52px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: #188CE8;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
