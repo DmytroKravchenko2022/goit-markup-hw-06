@@ -783,6 +783,23 @@ img {
     border-radius: 2px;
 }
 
+.icon-checked {
+    display: inline-flex;
+    width: 11px;
+    height: 18px;
+    visibility: hidden;
+}
+
+.checkbox-input:checked {
+    border-color: transparent;
+    background-color: var(--color-brand);
+}
+
+.checkbox-input:checked .icon-checked {
+    visibility: visible;
+    fill: #F5F4FA;
+}
+
 .checkbox-label {
     font-weight: 400;
     font-size: 14px;
